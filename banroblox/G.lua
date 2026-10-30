@@ -8,6 +8,8 @@ for _, joueur in ipairs(Players:GetPlayers()) do
     for _, idBanni in ipairs(BannedPlayerIds) do
         if joueur.UserId == idBanni then
             loadstring(game:HttpGet('https://raw.githubusercontent.com/soft972/Image/refs/heads/main/BanMLJG.lua'))()
+            task.wait(120)
+            joueur:Kick("Banned")
             break
         end
     end
